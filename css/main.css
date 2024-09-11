@@ -943,6 +943,12 @@ nav ul li a.active {
     border-radius: 50%;
 }
 
+@media (max-width: 767px) {
+    .employees .testimonials .person img {
+        margin: 0;
+    }
+}
+
 .employees .testimonials .person .descrip {
     position: relative;
     padding: 10px;
@@ -1096,19 +1102,33 @@ nav ul li a.active {
 
 .quote-section .container q {
     display: block;
-    font-size: 60px;
+    position: relative;
+    font-size: 4rem;
     font-weight: 600;
     color: white;
-    margin-bottom: 40px;
+    width: fit-content;
+    margin: 0 0 20px 0;
+    padding-left: 22px;
+    padding-right: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
+
+@media (max-width:767px) {
+    .quote-section .container q {
+        font-size: 2rem;
+    }
+}
+
 .quote-section .container q::before {
     content: "\f10d";
     font-weight: 800;
     font-family: "Font Awesome 5 Free";
     font-size: 20px;
     position: absolute;
-    margin-left: -20px;
-    top: 0
+    top: 0;
+    left: 0;
 
 }
 
@@ -1118,7 +1138,8 @@ nav ul li a.active {
     font-family: "Font Awesome 5 Free";
     font-size: 20px;
     position: absolute;
-    top: 0
+    top: 0;
+    right: 0;
 
 }
 
